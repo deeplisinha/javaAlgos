@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function f_add(){
+	var v1=document.getElementById('tbx').value;
+	var v2=document.getElementById('tby').value;
+	var out=parseInt(v1)+parseInt(v2);
+	
+	document.getElementById('tbname').value=out;
+	
+}
+function f_sub(){
+	var v1=document.getElementById('tbx').value;
+	var v2=document.getElementById('tby').value;
+	var out=parseInt(v1)-parseInt(v2);
+	
+	document.getElementById('tbname').value=out;
+	
+}
+function f_mul(){
+	var v1=document.getElementById('tbx').value;
+	var v2=document.getElementById('tby').value;
+	var out=parseInt(v1)*parseInt(v2);
+	
+	document.getElementById('tbname').value=out;
+}
+function f_div(){
+	var v1=document.getElementById('tbx').value;
+	var v2=document.getElementById('tby').value;
+	var out=parseInt(v1)/parseInt(v2);
+	
+	document.getElementById('tbname').value=out;
+}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+X:<input type="text" id="tbx" name="tbx" />
+Y:<input type="text" id="tby" name="tby" />
+<br/>
+<input type="radio" id="tb1" name="calc" onclick="f_add()" />Add
+<input type="radio" id="tb2" name="calc" onclick="f_sub()"/>Sub
+<input type="radio" id="tb3" name="calc" onclick="f_mul()"/>Mul
+<input type="radio" id="tb4" name="calc" onclick="f_div()"/>div
+<br/>
+<input type="text" id="tbname" name="tbname" />
+
+</body>
+</html>

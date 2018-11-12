@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function vowelCheck(){
+	var v1=document.getElementById('tb1').value;
+	for(var i=0;i<v1.length;i++){
+			var v2=v1.charAt(i);
+			if(v2=='a'||v2=='e'||v2=='i'||v2=='o'||v2=='u')
+			{
+			v1=v1.replace(v2,"");
+		}
+		
+}
+	document.getElementById('tb3').value=v1;
+}
+</script>
+</head>
+<body>
+<input type="text" id="tb1" name="tbx" />
+<br/>
+<input type="submit" id="tb2" value="CheckIfVowel" onclick="vowelCheck()"/>
+<br/>
+<input type="text" id="tb3" name="tbx" />
+
+</body>
+</html>
