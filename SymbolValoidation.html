@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+	function fn1() {
+		var v1 = document.getElementById("tb1").value;
+		var regx = /\W/;
+		var matchResult = v1.match(regx);
+		if ( matchResult == null) {
+			alert('valid entrance');
+		}else{
+			alert('error entrance');
+		}
+
+		
+	}
+</script>
+</head>
+<body>
+	<input type="text" id="tb1" name="tbname" />
+	<br />
+	<input type="submit" id="bt1" Value="push" onclick="fn1()" />
+</body>
+</html>
